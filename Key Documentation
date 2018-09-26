@@ -18,5 +18,9 @@ Install Notes :
   
 * Quick admin install
   
-  php artisan quickadmin:install
+  php artisan quickadmin:install  - Issues commands no namespace "quickadmin".
+  
+  
+  Fllow : https://laraveldaily.com/packages/quickadmin/
+  
 
