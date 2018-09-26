@@ -19,8 +19,44 @@ Install Notes :
 * Quick admin install
   
   php artisan quickadmin:install  - Issues commands no namespace "quickadmin".
-  
-  
   Fllow : https://laraveldaily.com/packages/quickadmin/
+  php artisan quickadmin:install
+  
+  https://stackoverflow.com/questions/1814532/1071-specified-key-was-too-long-max-key-length-is-767-bytes - 
+  
+  Fixed : 
+  
+        Solution For Laravel Framework
+
+        As per Laravel 5.4.* documentation; You have to set the default string length inside the
+
+        boot
+
+        method of
+
+        app/Providers/AppServiceProvider.php
+
+        file as follows:
+
+        use Illuminate\Support\Facades\Schema;
+
+        public function boot() 
+        {
+            Schema::defaultStringLength(191); 
+        }
+  
+  
+  OR
+  
+  Db engine issues refer above link to solve.
+  
+  drop database if exists rhodes; create database rhodes default
+  CHARACTER set utf8   default COLLATE utf8_general_ci;
+  
+  
+  
+  
+  
+
   
 
