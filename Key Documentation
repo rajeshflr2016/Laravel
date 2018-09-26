@@ -1,0 +1,22 @@
+/**
+**
+Date : 26-09-2018 
+**
+**/
+
+Install Notes :
+
+* Initially install composer with laravel composer.json
+
+  composer global require "laravel/installer"
+  IF Not working remove "global"
+  composer require "laravel/installer"
+
+* Sample blog created 
+
+  composer create-project --prefer-dist laravel/laravel blog
+  
+* Quick admin install
+  
+  php artisan quickadmin:install
+
