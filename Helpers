@@ -1,0 +1,44 @@
+* Array_dots - multidimentional array and key valus join
+
+- $array = ['products' => ['desk' => ['price' => 100]]];
+
+  $flattened = array_dot($array);
+
+  // ['products.desk.price' => 100]
+  
+ -------------------- *********** --------------
+ array_except()
+The array_except function removes the given key / value pairs
+
+-------------------- ************ --------------
+array_first()
+
+ - Based on first elements array value to show result.
+ 
+ ------------------- ************ --------------
+ array_flatten()
+ 
+ - multidimentional array vaules to convert single array.
+ 
+ $array = ['name' => 'Joe', 'languages' => ['PHP', 'Ruby']];
+
+$flattened = array_flatten($array);
+
+// ['Joe', 'PHP', 'Ruby']
+
+----------------- ************** --------------
+array_get()
+The array_get function retrieves a value from a deeply nested array using "dot" notation:
+
+$array = ['products' => ['desk' => ['price' => 100]]];
+
+$price = array_get($array, 'products.desk.price');
+
+// 100
+
+--------------- ************** -----------------
+kebab_case() -  string with - operator
+snake_case() -  string with _ operator
+
+
+
