@@ -1,0 +1,15 @@
+Local filesystem
+Amzan S3
+Rackspace could
+
+config/filesystems.php
+
+Disk Instance 
+
+stroge::get();
+
+Storage::copy('old/file.jpg', 'new/file.jpg');
+
+Storage::move('old/file.jpg', 'new/file.jpg');
+
+Storage::makeDirectory($directory);
